@@ -1,9 +1,9 @@
-package com.idat.app.Repository;
+package com.idat.Repository;
 
 import java.util.ArrayList;
 import java.util.List;
 
-import com.idat.app.Model.Producto;
+import com.idat.Model.Producto;
 
 public class ProductoRepositoryImp implements ProductoRepository {
 
@@ -27,7 +27,7 @@ public class ProductoRepositoryImp implements ProductoRepository {
 	}
 
 	@Override
-	public void eliminar(Integer id) {
+	public void eliminar(int id) {
 		Producto existeEliminar = obtener(id);
 		almacenamiento.remove(existeEliminar);
 	}
@@ -38,7 +38,7 @@ public class ProductoRepositoryImp implements ProductoRepository {
 	}
 
 	@Override
-	public Producto obtener(Integer id) {
+	public Producto obtener(int id) {
 
 //		for(Producto producto : almacenamiento) {
 //			if (producto.getIdProducto() == id) {

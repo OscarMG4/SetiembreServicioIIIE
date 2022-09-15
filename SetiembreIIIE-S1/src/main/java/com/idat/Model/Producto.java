@@ -1,4 +1,4 @@
-package com.idat.app.Model;
+package com.idat.Model;
 
 public class Producto {
 

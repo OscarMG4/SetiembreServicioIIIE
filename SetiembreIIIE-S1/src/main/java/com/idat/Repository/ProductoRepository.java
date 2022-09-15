@@ -1,8 +1,8 @@
-package com.idat.app.Repository;
+package com.idat.Repository;
 
 import java.util.List;
 
-import com.idat.app.Model.Producto;
+import com.idat.Model.Producto;
 
 public interface ProductoRepository {
 
@@ -10,10 +10,10 @@ public interface ProductoRepository {
 
 	void actualizar(Producto producto);
 
-	void eliminar(Integer id);
+	void eliminar(int id);
 
 	List<Producto> listar();
 
-	Producto obtener(Integer id);
+	Producto obtener(int id);
 
 }

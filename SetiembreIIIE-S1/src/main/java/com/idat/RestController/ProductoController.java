@@ -1,6 +1,6 @@
-package com.idat.app.RestController;
+package com.idat.RestController;
 
-import java.util.List;
+import java.util.List;  
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
@@ -13,14 +13,15 @@ import org.springframework.web.bind.annotation.PutMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.idat.app.Model.Producto;
-import com.idat.app.Repository.ProductoRepository;
+import com.idat.Model.Producto;
+import com.idat.Repository.ProductoRepository;
+
 
 @RestController
 @RequestMapping("/producto")
 public class ProductoController {
 	
-	@Autowired
+	@Autowired(required=false)
 	public ProductoRepository repository;
 	
 	@GetMapping
