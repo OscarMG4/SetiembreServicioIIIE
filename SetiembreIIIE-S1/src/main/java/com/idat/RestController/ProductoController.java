@@ -21,8 +21,8 @@ import com.idat.Repository.ProductoRepository;
 @RequestMapping("/producto")
 public class ProductoController {
 	
-	@Autowired(required=false)
-	public ProductoRepository repository;
+	@Autowired
+	private ProductoRepository repository;
 	
 	@GetMapping
 	public ResponseEntity<List<Producto>> obtenerProductos(){

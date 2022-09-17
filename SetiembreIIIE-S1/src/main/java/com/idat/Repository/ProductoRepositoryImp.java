@@ -1,10 +1,13 @@
 package com.idat.Repository;
 
-import java.util.ArrayList;
+import java.util.ArrayList; 
 import java.util.List;
+
+import org.springframework.stereotype.Service;
 
 import com.idat.Model.Producto;
 
+@Service
 public class ProductoRepositoryImp implements ProductoRepository {
 
 	List<Producto> almacenamiento = new ArrayList<>();
