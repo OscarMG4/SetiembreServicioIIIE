@@ -1,4 +1,4 @@
-package com.idat.Repository;
+package com.idat.Service;
 
 import java.util.ArrayList; 
 import java.util.List;
@@ -6,9 +6,10 @@ import java.util.List;
 import org.springframework.stereotype.Service;
 
 import com.idat.Model.Producto;
+import com.idat.Repository.ProductoRepository;
 
 @Service
-public class ProductoRepositoryImp implements ProductoRepository {
+public class ProductoServiceImp implements ProductoRepository {
 
 	List<Producto> almacenamiento = new ArrayList<>();
 
